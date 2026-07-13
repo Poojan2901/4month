@@ -1,0 +1,5426 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  chibi-photos/
+    001-chibi.png
+    002-chibi.png
+    003-chibi.png
+    004-chibi.png
+    009-chibi.png
+    011-chibi.png
+  photos/
+    001.jpeg
+    002.jpeg
+    003.jpeg
+    004.jpeg
+    005.jpeg
+    006.jpeg
+    007.jpeg
+    008.jpeg
+    009.jpeg
+    010.jpeg
+    011.jpeg
+    012.jpeg
+    013.jpeg
+    014.jpeg
+    015.jpeg
+    016.jpeg
+    017.jpeg
+    018.jpeg
+    019.jpeg
+    020.jpeg
+    021.jpeg
+    022.jpeg
+    023.jpeg
+    024.jpeg
+    025.jpeg
+    026.jpeg
+    027.jpeg
+    028.jpeg
+    029.jpeg
+    030.jpeg
+    031.jpeg
+    032.jpeg
+    033.jpeg
+    034.jpeg
+    035.jpeg
+    036.jpeg
+    037.jpeg
+    038.jpeg
+    039.jpeg
+    040.jpeg
+    041.jpeg
+    042.jpeg
+    043.jpeg
+    044.jpeg
+    045.jpeg
+    046.jpeg
+    047.jpeg
+    048.jpeg
+    049.jpeg
+    050.jpeg
+  favicon.svg
+  icons.svg
+src/
+  assets/
+    hero.png
+    react.svg
+    vite.svg
+  components/
+    BucketList/
+      BucketList.css
+      BucketList.jsx
+    common/
+      Cursor.jsx
+    Counter/
+      Counter.css
+      Counter.jsx
+    Coupons/
+      Coupons.css
+      Coupons.jsx
+    Feelings/
+      Feelings.css
+      Feelings.jsx
+    Gallery/
+      DiaryBook.css
+      DiaryBook.jsx
+    Hero/
+      Hero.css
+      Hero.jsx
+    Journey/
+      Journey.css
+      Journey.jsx
+    Letters/
+      Letters.css
+      Letters.jsx
+    LoveMap/
+      LoveMap.css
+      LoveMap.jsx
+    MessageBottle/
+      MessageBottle.css
+      MessageBottle.jsx
+    MessageJar/
+      MessageJar.css
+      MessageJar.jsx
+    Promises/
+      Promises.css
+      Promises.jsx
+    Quiz/
+      Quiz.css
+      Quiz.jsx
+    Soundtrack/
+      Soundtrack.css
+      Soundtrack.jsx
+    Stats/
+      Stats.css
+      Stats.jsx
+    Videos/
+      Videos.css
+      Videos.jsx
+  data/
+    galleryData.js
+    journeyData.js
+    videoData.js
+  lib/
+    supabaseClient.js
+  styles/
+    global.css
+    tokens.css
+  App.jsx
+  main.jsx
+.gitignore
+eslint.config.js
+index.html
+package.json
+README.md
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/assets/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" fill="none" aria-labelledby="vite-logo-title" viewBox="0 0 77 47"><title id="vite-logo-title">Vite</title><style>.parenthesis{fill:#000}@media (prefers-color-scheme:dark){.parenthesis{fill:#fff}}</style><path fill="#9135ff" d="M40.151 45.71c-.663.844-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.493c-.92 0-1.457-1.04-.92-1.788l7.479-10.471c1.07-1.498 0-3.578-1.842-3.578H15.443c-.92 0-1.456-1.04-.92-1.788l9.696-13.576c.213-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.472c-1.07 1.497 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.087.89 1.83L40.153 45.712z"/><mask id="a" width="48" height="47" x="14" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M40.047 45.71c-.663.843-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.389c-.92 0-1.457-1.04-.92-1.788l7.479-10.472c1.07-1.497 0-3.578-1.842-3.578H15.34c-.92 0-1.456-1.04-.92-1.788l9.696-13.575c.213-.297.556-.474.92-.474H53.93c.92 0 1.456 1.04.92 1.788L47.37 13.03c-1.07 1.498 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.088.89 1.831L40.049 45.712z"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#eee6ff" rx="5.508" ry="14.704" transform="rotate(269.814 20.96 11.29)scale(-1 1)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#eee6ff" rx="10.399" ry="29.851" transform="rotate(89.814 -16.902 -8.275)scale(1 -1)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#8900ff" rx="5.508" ry="30.487" transform="rotate(89.814 -19.197 -7.127)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.928 4.177)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.738 5.52)scale(1 -1)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#eee6ff" rx="14.072" ry="22.078" transform="rotate(93.35 31.245 55.578)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx="14.592" cy="9.743" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(39.51 14.592 9.743)"/></g><g filter="url(#k)"><ellipse cx="61.728" cy="-5.321" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 61.728 -5.32)"/></g><g filter="url(#l)"><ellipse cx="55.618" cy="7.104" fill="#00c2ff" rx="5.971" ry="9.665" transform="rotate(37.892 55.618 7.104)"/></g><g filter="url(#m)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#n)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#o)"><ellipse cx="49.857" cy="30.678" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 49.857 30.678)"/></g><g filter="url(#p)"><ellipse cx="52.623" cy="33.171" fill="#00c2ff" rx="5.971" ry="15.297" transform="rotate(37.892 52.623 33.17)"/></g></g><path d="M6.919 0c-9.198 13.166-9.252 33.575 0 46.789h6.215c-9.25-13.214-9.196-33.623 0-46.789zm62.424 0h-6.215c9.198 13.166 9.252 33.575 0 46.789h6.215c9.25-13.214 9.196-33.623 0-46.789" class="parenthesis"/><defs><filter id="b" width="60.045" height="41.654" x="-5.564" y="16.92" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-40.407" y="-6.762" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-35.435" y="2.801" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-30.84" y="20.8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-29.307" y="21.949" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="29.961" y="-17.13" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-13.43" y="-22.082" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="34.321" y="-37.644" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="38.847" y="-10.552" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="22.45" y="-1.645" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="32.919" y="11.36" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="src/components/BucketList/BucketList.css">
+.bucket-section {
+  padding: var(--space-6) var(--space-3);
+  background: #fcfbf7;
+  position: relative;
+}
+
+.bucket-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bucket-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.bucket-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+.bucket-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+@media (max-width: 900px) {
+  .bucket-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bucket-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bucket-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4);
+  border-radius: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out);
+}
+
+.bucket-card:hover {
+  box-shadow: 0 10px 25px rgba(217, 119, 87, 0.05);
+  border-color: var(--color-accent-soft);
+}
+
+.bucket-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bucket-icon {
+  font-size: 1.5rem;
+}
+
+.status-badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 8px;
+  border-radius: 99px;
+  font-weight: 600;
+}
+
+.status-badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.in\ progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.planning {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.dreaming {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.bucket-task {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.bucket-add-box {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: center;
+}
+
+.bucket-add-toggle {
+  background: transparent;
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-muted);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.bucket-add-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.bucket-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.bucket-add-form input,
+.bucket-add-form select {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.bucket-add-row {
+  display: flex;
+  gap: 8px;
+}
+
+.bucket-emoji-input {
+  width: 60px;
+  text-align: center;
+}
+
+.bucket-add-row select {
+  flex: 1;
+}
+
+.bucket-add-row button {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bucket-add-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+</file>
+
+<file path="src/components/BucketList/BucketList.jsx">
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./BucketList.css";
+
+const defaultBucketList = [
+  { id: "default-1", task: "watch the northern lights", status: "dreaming", icon: "🌌" },
+  { id: "default-3", task: "road trip with no destination", status: "planning", icon: "🚗" },
+  { id: "default-4", task: "learn to cook a signature dish", status: "in progress", icon: "🍳" },
+];
+
+const statusOptions = ["dreaming", "planning", "in progress", "completed"];
+
+export default function BucketList() {
+  const [items, setItems] = useState(defaultBucketList);
+  const [loading, setLoading] = useState(true);
+  const [newTask, setNewTask] = useState("");
+  const [newIcon, setNewIcon] = useState("💫");
+  const [newStatus, setNewStatus] = useState("dreaming");
+  const [showForm, setShowForm] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    fetchItems();
+  }, []);
+
+  async function fetchItems() {
+    const { data, error } = await supabase
+      .from("bucket_items")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch bucket_items error:", error);
+      setLoading(false);
+      return;
+    }
+
+    setItems([...defaultBucketList, ...data]);
+    setLoading(false);
+  }
+
+  async function handleAdd(e) {
+    e.preventDefault();
+    if (!newTask.trim()) return;
+
+    setSubmitting(true);
+
+    const { data, error } = await supabase
+      .from("bucket_items")
+      .insert([{ task: newTask.trim(), icon: newIcon || "💫", status: newStatus }])
+      .select()
+      .single();
+
+    setSubmitting(false);
+
+    if (error) {
+      console.error("insert bucket_items error:", error);
+      return;
+    }
+
+    setItems((prev) => [...prev, data]);
+    setNewTask("");
+    setNewIcon("💫");
+    setNewStatus("dreaming");
+    setShowForm(false);
+  }
+
+  return (
+    <section className="bucket-section">
+      <div className="bucket-container">
+        <motion.p
+          className="bucket-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          our next chapters
+        </motion.p>
+        <motion.h2
+          className="bucket-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          our bucket list
+        </motion.h2>
+
+        {!loading && (
+          <div className="bucket-grid">
+            {items.map((item, idx) => (
+              <motion.div
+                key={item.id}
+                className={`bucket-card ${item.status}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.06 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+              >
+                <div className="bucket-card-top">
+                  <span className="bucket-icon">{item.icon}</span>
+                  <span className={`status-badge ${item.status}`}>{item.status}</span>
+                </div>
+                <p className="bucket-task">{item.task}</p>
+              </motion.div>
+            ))}
+          </div>
+        )}
+
+        <div className="bucket-add-box">
+          {!showForm ? (
+            <button className="bucket-add-toggle" onClick={() => setShowForm(true)}>
+              + add something to our list
+            </button>
+          ) : (
+            <form onSubmit={handleAdd} className="bucket-add-form">
+              <input
+                type="text"
+                placeholder="what should we do together?"
+                value={newTask}
+                onChange={(e) => setNewTask(e.target.value)}
+                maxLength={80}
+                disabled={submitting}
+              />
+              <div className="bucket-add-row">
+                <input
+                  type="text"
+                  className="bucket-emoji-input"
+                  placeholder="🌟"
+                  value={newIcon}
+                  onChange={(e) => setNewIcon(e.target.value)}
+                  maxLength={2}
+                  disabled={submitting}
+                />
+                <select
+                  value={newStatus}
+                  onChange={(e) => setNewStatus(e.target.value)}
+                  disabled={submitting}
+                >
+                  {statusOptions.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+                <button type="submit" disabled={submitting}>
+                  {submitting ? "adding..." : "add"}
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/common/Cursor.jsx">
+
+</file>
+
+<file path="src/components/Counter/Counter.css">
+.counter-section {
+  padding: var(--space-6) var(--space-3);
+  background: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.counter-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.counter-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.counter-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 600px) {
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2);
+  }
+}
+
+.counter-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-3) var(--space-2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.counter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(217, 119, 87, 0.08);
+  border-color: var(--color-accent-soft);
+}
+
+.counter-value {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.counter-unit {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+
+.counter-footer {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  max-width: 450px;
+  line-height: 1.5;
+}
+</file>
+
+<file path="src/components/Counter/Counter.jsx">
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import "./Counter.css";
+
+// Target date: March 15, 2026
+const START_DATE = new Date("2026-03-15T00:00:19");
+
+export default function Counter() {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    function updateCounter() {
+      const now = new Date();
+      const difference = now.getTime() - START_DATE.getTime();
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      }
+    }
+
+    updateCounter();
+    const interval = setInterval(updateCounter, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <section className="counter-section">
+      <div className="counter-container">
+        <motion.p
+          className="counter-subtitle"
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          every single second since we started
+        </motion.p>
+        <motion.h2
+          className="counter-title"
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          our time together
+        </motion.h2>
+
+        <div className="counter-grid">
+          {Object.entries(timeLeft).map(([unit, value], idx) => (
+            <motion.div
+              key={unit}
+              className="counter-card"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
+            >
+              <span className="counter-value">{String(value).padStart(2, "0")}</span>
+              <span className="counter-unit">{unit}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.p
+          className="counter-footer"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          and i would choose you all over again, in a heartbeat.
+        </motion.p>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Coupons/Coupons.css">
+.coupons-section {
+  padding: var(--space-5) var(--space-2);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.coupons-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coupons-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.coupons-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.coupons-desc {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-4);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.coupons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+.coupon-card {
+  background: #ffffff;
+  border: 2px dashed var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-3);
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  overflow: hidden;
+}
+
+.coupon-card.redeemed {
+  opacity: 0.8;
+  background: var(--color-surface);
+}
+
+.coupon-content {
+  margin-bottom: var(--space-2);
+}
+
+.coupon-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.coupon-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.coupon-card-desc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.coupon-action {
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-2);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.redeem-btn {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: transform var(--duration-fast) ease, opacity var(--duration-fast) ease;
+}
+
+.redeem-btn:hover {
+  transform: translateY(-1px);
+}
+
+.redeem-btn:disabled {
+  background: var(--color-border);
+  color: var(--color-text-muted);
+  cursor: default;
+  transform: none;
+}
+
+/* Stamp Overlay */
+.stamp-overlay {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.stamp-border {
+  border: 3px double #d32f2f;
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.stamp-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d32f2f;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+  .coupons-title {
+    font-size: 2.2rem;
+  }
+}
+</file>
+
+<file path="src/components/Coupons/Coupons.jsx">
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./Coupons.css";
+
+export default function Coupons() {
+  const [coupons, setCoupons] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [newTitle, setNewTitle] = useState("");
+  const [newDesc, setNewDesc] = useState("");
+  const [newIcon, setNewIcon] = useState("🎟️");
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    fetchCoupons();
+  }, []);
+
+  async function fetchCoupons() {
+    const { data, error } = await supabase
+      .from("coupons")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch coupons error:", error);
+      setLoading(false);
+      return;
+    }
+
+    setCoupons(data);
+    setLoading(false);
+  }
+
+  async function handleRedeem(id) {
+    setCoupons((prev) =>
+      prev.map((c) => (c.id === id ? { ...c, redeemed: true } : c))
+    );
+
+    const { error } = await supabase
+      .from("coupons")
+      .update({ redeemed: true, redeemed_at: new Date().toISOString() })
+      .eq("id", id);
+
+    if (error) {
+      console.error("redeem coupon error:", error);
+      fetchCoupons(); // revert on failure
+    }
+  }
+
+  async function handleAdd(e) {
+    e.preventDefault();
+    if (!newTitle.trim()) return;
+
+    setSubmitting(true);
+
+    const { data, error } = await supabase
+      .from("coupons")
+      .insert([{
+        title: newTitle.trim(),
+        description: newDesc.trim(),
+        icon: newIcon || "🎟️"
+      }])
+      .select()
+      .single();
+
+    setSubmitting(false);
+
+    if (error) {
+      console.error("insert coupon error:", error);
+      return;
+    }
+
+    setCoupons((prev) => [...prev, data]);
+    setNewTitle("");
+    setNewDesc("");
+    setNewIcon("🎟️");
+    setShowForm(false);
+  }
+
+  return (
+    <section className="coupons-section">
+      <div className="coupons-container">
+        <motion.p className="coupons-subtitle" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+          special privileges
+        </motion.p>
+        <motion.h2 className="coupons-title" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+          love coupons
+        </motion.h2>
+        <motion.p className="coupons-desc" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
+          a few digital vouchers you can redeem at any time. once used, they are stamped forever!
+        </motion.p>
+
+        {!loading && (
+          <div className="coupons-grid">
+            {coupons.map((coupon, idx) => {
+              const isRedeemed = coupon.redeemed;
+              return (
+                <motion.div
+                  key={coupon.id}
+                  className={`coupon-card ${isRedeemed ? "redeemed" : "available"}`}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  whileHover={!isRedeemed ? { y: -6, scale: 1.02 } : {}}
+                >
+                  <div className="coupon-content">
+                    <span className="coupon-icon">{coupon.icon}</span>
+                    <h3 className="coupon-card-title">{coupon.title}</h3>
+                    <p className="coupon-card-desc">{coupon.description}</p>
+                  </div>
+                  <div className="coupon-action">
+                    <button
+                      className="redeem-btn"
+                      onClick={() => handleRedeem(coupon.id)}
+                      disabled={isRedeemed}
+                    >
+                      {isRedeemed ? "redeemed" : "redeem now"}
+                    </button>
+                  </div>
+
+                  <AnimatePresence>
+                    {isRedeemed && (
+                      <motion.div
+                        className="stamp-overlay"
+                        initial={{ scale: 3, opacity: 0, rotate: -45 }}
+                        animate={{ scale: 1, opacity: 0.85, rotate: -15 }}
+                        transition={{ type: "spring", stiffness: 120, damping: 10 }}
+                      >
+                        <div className="stamp-border">
+                          <span className="stamp-text">REDEEMED</span>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
+
+        <div className="bucket-add-box">
+          {!showForm ? (
+            <button className="bucket-add-toggle" onClick={() => setShowForm(true)}>
+              + create a coupon for me
+            </button>
+          ) : (
+            <form onSubmit={handleAdd} className="bucket-add-form">
+              <input
+                type="text"
+                placeholder="coupon title"
+                value={newTitle}
+                onChange={(e) => setNewTitle(e.target.value)}
+                maxLength={60}
+                disabled={submitting}
+              />
+              <input
+                type="text"
+                placeholder="what it's for"
+                value={newDesc}
+                onChange={(e) => setNewDesc(e.target.value)}
+                maxLength={140}
+                disabled={submitting}
+              />
+              <div className="bucket-add-row">
+                <input
+                  type="text"
+                  className="bucket-emoji-input"
+                  placeholder="🎟️"
+                  value={newIcon}
+                  onChange={(e) => setNewIcon(e.target.value)}
+                  maxLength={2}
+                  disabled={submitting}
+                />
+                <button type="submit" disabled={submitting}>
+                  {submitting ? "creating..." : "create"}
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Feelings/Feelings.css">
+.feelings {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-dark);
+  overflow: hidden;
+  cursor: none;
+}
+
+.feelings-text-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(40px, 9vw, 130px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  padding: var(--space-4);
+  pointer-events: none;
+  user-select: none;
+}
+
+.feelings-text-base {
+  color: #2a2820;
+}
+
+.feelings-text-color {
+  color: var(--color-accent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.feelings-spotlight {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.feelings-caption {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  color: #7a7869;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+</file>
+
+<file path="src/components/Feelings/Feelings.jsx">
+import { useRef } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import "./Feelings.css";
+
+export default function Feelings() {
+  const containerRef = useRef(null);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const spotX = useSpring(mouseX, { stiffness: 150, damping: 20 });
+  const spotY = useSpring(mouseY, { stiffness: 150, damping: 20 });
+
+  function handleMouseMove(e) {
+    const rect = containerRef.current.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
+  }
+
+  return (
+    <section
+      ref={containerRef}
+      className="feelings"
+      onMouseMove={handleMouseMove}
+    >
+      <motion.div
+        className="feelings-spotlight"
+        style={{
+          left: spotX,
+          top: spotY,
+        }}
+      />
+
+      <div className="feelings-text-layer feelings-text-base">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span key={i}>you, always. </span>
+        ))}
+      </div>
+      <motion.div
+        className="feelings-text-layer feelings-text-color"
+        style={{
+          WebkitMaskImage: `radial-gradient(circle 180px at ${spotX}px ${spotY}px, black 0%, transparent 100%)`,
+          maskImage: `radial-gradient(circle 180px at ${spotX}px ${spotY}px, black 0%, transparent 100%)`,
+        }}
+      >
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span key={i}>you, always. </span>
+        ))}
+      </motion.div>
+
+      <p className="feelings-caption">move around. find how i feel.</p>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Gallery/DiaryBook.css">
+.diary-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-dark);
+  padding: var(--space-3);
+}
+
+.book-spread {
+  display: flex;
+  width: min(1300px, 95vw);
+  height: 90vh;
+  perspective: 2400px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.page {
+  width: 50%;
+  height: 100%;
+}
+
+.page-caption {
+  padding: var(--space-5) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.page-number {
+  align-self: flex-start;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.chibi-frame {
+  background: #fff;
+  padding: 12px 12px 28px 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: var(--space-3) 0;
+  width: 160px;
+}
+
+.chibi-art {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption-text {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.6;
+  color: var(--color-text);
+  max-width: 420px;
+}
+
+.page-flip-wrap {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.page-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.page-under {
+  z-index: 1;
+}
+
+.page-active {
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.page-shadow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.page-shadow-left {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.page-shadow-right {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.page-hint {
+  margin-top: var(--space-3);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a7869;
+}
+
+@media (max-width: 768px) {
+  .book-spread {
+    flex-direction: column;
+    height: auto;
+  }
+  .page,
+  .page-flip-wrap {
+    width: 100%;
+  }
+  .page-caption {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-3);
+  }
+  .page-flip-wrap {
+    height: 60vh;
+  }
+  .chibi-frame {
+    width: 130px;
+  }
+  .chibi-art {
+    height: 130px;
+  }
+}
+
+.page-controls {
+  margin-top: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.page-nav-btn {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: #f0eee6;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease-out), opacity 0.2s var(--ease-out);
+}
+
+.page-nav-btn:hover:not(:disabled) {
+  border-color: var(--color-accent);
+}
+
+.page-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+</file>
+
+<file path="src/components/Gallery/DiaryBook.jsx">
+import { useState, useEffect } from "react";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import galleryData from "../../data/galleryData";
+import "./DiaryBook.css";
+
+export default function DiaryBook() {
+  const [current, setCurrent] = useState(0);
+  const rotateY = useMotionValue(0);
+  const shadowOpacityLeft = useTransform(rotateY, [0, -180], [0, 0.5]);
+  const shadowOpacityRight = useTransform(rotateY, [0, 180], [0, 0.5]);
+
+  // preload all photos + chibi art into browser cache on mount
+  useEffect(() => {
+    galleryData.forEach((item) => {
+      const img = new Image();
+      img.src = item.src;
+      const chibiImg = new Image();
+      chibiImg.src = item.chibi;
+    });
+  }, []);
+
+  const photo = galleryData[current];
+  const nextPhoto = galleryData[current + 1];
+  const prevPhoto = galleryData[current - 1];
+  const isLast = current >= galleryData.length - 1;
+  const isFirst = current === 0;
+
+  const turnSpring = { type: "spring", stiffness: 45, damping: 18 };
+
+  function goNext() {
+    if (isLast) return;
+    animate(rotateY, -180, {
+      ...turnSpring,
+      onComplete: () => {
+        setCurrent((c) => c + 1);
+        rotateY.set(0);
+      },
+    });
+  }
+
+  function goPrev() {
+    if (isFirst) return;
+    animate(rotateY, 180, {
+      ...turnSpring,
+      onComplete: () => {
+        setCurrent((c) => c - 1);
+        rotateY.set(0);
+      },
+    });
+  }
+
+  return (
+    <section className="diary-section">
+      <div className="book-spread">
+        <div className="page page-caption">
+          <span className="page-number">
+            {String(current + 1).padStart(3, "0")}
+          </span>
+
+          <motion.div
+            key={photo.id}
+            className="chibi-frame"
+            initial={{ opacity: 0, y: 15, rotate: -6, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, rotate: -3, scale: 1 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <img src={photo.chibi} alt="" className="chibi-art" />
+          </motion.div>
+
+          <p className="caption-text">
+            {photo.caption || "her caption goes here."}
+          </p>
+        </div>
+
+        <div className="page-flip-wrap">
+          {nextPhoto && (
+            <div className="page page-photo page-under">
+              <img src={nextPhoto.src} alt="" />
+            </div>
+          )}
+          {prevPhoto && (
+            <div className="page page-photo page-under">
+              <img src={prevPhoto.src} alt="" />
+            </div>
+          )}
+
+          <motion.div
+            className="page page-photo page-active"
+            style={{ rotateY, transformOrigin: "left center" }}
+          >
+            <img src={photo.src} alt={photo.caption || "photo"} />
+            <motion.div
+              className="page-shadow page-shadow-left"
+              style={{ opacity: shadowOpacityLeft }}
+            />
+            <motion.div
+              className="page-shadow page-shadow-right"
+              style={{ opacity: shadowOpacityRight }}
+            />
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="page-controls">
+        <button className="page-nav-btn" onClick={goPrev} disabled={isFirst}>
+          ← prev
+        </button>
+        <span className="page-hint">
+          {String(current + 1).padStart(3, "0")} / {String(galleryData.length).padStart(3, "0")}
+        </span>
+        <button className="page-nav-btn" onClick={goNext} disabled={isLast}>
+          next →
+        </button>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Hero/Hero.css">
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-bg-dark);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(217,119,87,0.25), transparent 55%),
+    radial-gradient(circle at 75% 80%, rgba(217,119,87,0.15), transparent 50%),
+    var(--color-bg-dark);
+}
+
+.hero-vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 200px 60px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.hero-nav {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-4);
+  right: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f0eee6;
+  z-index: 2;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.hero-nav-logo {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 var(--space-3);
+}
+
+.hero-eyebrow {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent-soft);
+  margin-bottom: var(--space-3);
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(72px, 14vw, 200px);
+  line-height: 0.95;
+  color: #f5f3ec;
+  letter-spacing: -0.02em;
+}
+
+.hero-sub {
+  margin-top: var(--space-3);
+  color: #b8b6ac;
+  font-size: 18px;
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+.hero-scroll-cue {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #b8b6ac;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--color-accent-soft), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+</file>
+
+<file path="src/components/Hero/Hero.jsx">
+import { motion } from "framer-motion";
+import "./Hero.css";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.2 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
+  },
+};
+
+export default function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-bg" />
+      <div className="hero-vignette" />
+
+      <nav className="hero-nav">
+        <span className="hero-nav-logo">US</span>
+        <span className="hero-nav-link">United SOULS</span>
+      </nav>
+
+      <motion.div
+        className="hero-content"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.p variants={item} className="hero-eyebrow">
+          a story, still being written
+        </motion.p>
+        <motion.h1 variants={item} className="hero-title">
+          Kira
+        </motion.h1>
+        <motion.p variants={item} className="hero-sub">
+          every moment we've made, kept here for you.
+        </motion.p>
+      </motion.div>
+
+      <motion.div
+        className="hero-scroll-cue"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 0.8 }}
+      >
+        <span className="hero-scroll-line" />
+        <span>scroll</span>
+      </motion.div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Journey/Journey.css">
+.journey {
+  position: relative;
+  height: 400vh; /* scroll runway — taller = slower/longer horizontal scroll */
+  background: var(--color-bg);
+}
+
+.journey-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.journey-heading {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  z-index: 2;
+}
+
+.journey-track {
+  display: flex;
+  gap: var(--space-4);
+  padding-left: var(--space-4);
+  will-change: transform;
+}
+
+.journey-card {
+  flex: 0 0 auto;
+  width: min(420px, 70vw);
+}
+
+.journey-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-surface);
+  margin-bottom: var(--space-2);
+}
+
+.journey-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journey-card-year {
+  font-size: 13px;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.journey-card-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  color: var(--color-text);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.journey-card-text {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  max-width: 340px;
+}
+</file>
+
+<file path="src/components/Journey/Journey.jsx">
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import journeyData from "../../data/journeyData";
+import "./Journey.css";
+
+export default function Journey() {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  // total horizontal travel = (numCards - 1) * 100vw worth, in %
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+
+  return (
+    <section ref={containerRef} className="journey">
+      <div className="journey-sticky">
+        <p className="journey-heading">our journey</p>
+        <motion.div className="journey-track" style={{ x }}>
+          {journeyData.map((item) => (
+            <JourneyCard key={item.id} item={item} />
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function JourneyCard({ item }) {
+  return (
+    <div className="journey-card">
+      <div className="journey-card-img">
+        <img src={item.img} alt={item.title} />
+      </div>
+      <span className="journey-card-year">{item.year}</span>
+      <h3 className="journey-card-title">{item.title}</h3>
+      <p className="journey-card-text">{item.text}</p>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Letters/Letters.css">
+.letters-section {
+  padding: var(--space-6) var(--space-3);
+  background: #fdfcf9; /* Slightly warmer white for paper-like feel */
+  position: relative;
+}
+
+.letters-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.letters-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.letters-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+.letters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 900px) {
+  .letters-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.letter-envelope {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4);
+  border-radius: 12px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.envelope-stamp {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  font-size: 1.5rem;
+  filter: opacity(0.85);
+}
+
+.envelope-date {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.envelope-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-text);
+  font-weight: 400;
+  margin-bottom: var(--space-2);
+}
+
+.envelope-preview {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-4);
+  flex-grow: 1;
+}
+
+.envelope-read-btn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* Modal Styling */
+.letter-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(23, 22, 15, 0.45);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: var(--space-3);
+}
+
+.letter-modal-content {
+  background: #fcfbf7;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 550px;
+  padding: var(--space-5) var(--space-4);
+  position: relative;
+  text-align: left;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.close-modal-btn:hover {
+  color: var(--color-text);
+}
+
+.modal-letter-date {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.modal-letter-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-text);
+  font-weight: 400;
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.modal-letter-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin-bottom: var(--space-4);
+}
+
+.modal-letter-body {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #3d3c38;
+  white-space: pre-wrap;
+  margin-bottom: var(--space-4);
+}
+
+.modal-letter-signature {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+  color: var(--color-accent);
+}
+</file>
+
+<file path="src/components/Letters/Letters.jsx">
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import "./Letters.css";
+
+const lettersData = [
+  {
+    id: 1,
+    title: "to you, on the quiet days",
+    preview: "i want you to know how much peace you bring me...",
+    content: "sometimes, in the middle of a busy day, i catch myself thinking about the way you smile. it’s this quiet, gentle reminder that no matter how chaotic the world gets, you are my safe space my world. thank you for being the calm in my storm.",
+    date: "july 10, 2026",
+  },
+  {
+    id: 2,
+    title: "when the distance feels heavy",
+    preview: "every mile between us is just a reminder of...",
+    content: "distance is hard, but it has taught me one thing: my love for you is not bound by geography. every phone call, every late-night laugh, and every countdown until we see each other makes it all worth it. i am yours, always.",
+    date: "july 09, 2026",
+  },
+  {
+    id: 3,
+    title: "a promise for our future",
+    preview: "i promise to choose you, every single day...",
+    content: "i promise to stand by you, to laugh with you, and to hold your hand through the highs and the lows. i promise to keep building a world with you, one memory at a time. you are my today and all of my tomorrows.",
+    date: "july 08, 2026",
+  },
+];
+
+export default function Letters() {
+  const [selectedLetter, setSelectedLetter] = useState(null);
+
+  return (
+    <section className="letters-section">
+      <div className="letters-container">
+        <motion.p
+          className="letters-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          words left for you
+        </motion.p>
+        <motion.h2
+          className="letters-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          letters to kira
+        </motion.h2>
+
+        <div className="letters-grid">
+          {lettersData.map((letter, idx) => (
+            <motion.div
+              key={letter.id}
+              className="letter-envelope"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.15 }}
+              onClick={() => setSelectedLetter(letter)}
+              whileHover={{ y: -8, scale: 1.02 }}
+            >
+              <div className="envelope-stamp">❤️</div>
+              <span className="envelope-date">{letter.date}</span>
+              <h3 className="envelope-title">{letter.title}</h3>
+              <p className="envelope-preview">"{letter.preview}"</p>
+              <span className="envelope-read-btn">open letter</span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {selectedLetter && (
+          <motion.div
+            className="letter-modal-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedLetter(null)}
+          >
+            <motion.div
+              className="letter-modal-content"
+              initial={{ scale: 0.9, y: 20, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.9, y: 20, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="close-modal-btn"
+                onClick={() => setSelectedLetter(null)}
+              >
+                ✕
+              </button>
+              <span className="modal-letter-date">{selectedLetter.date}</span>
+              <h3 className="modal-letter-title">{selectedLetter.title}</h3>
+              <div className="modal-letter-divider" />
+              <p className="modal-letter-body">{selectedLetter.content}</p>
+              <div className="modal-letter-signature">always, yours.</div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/LoveMap/LoveMap.css">
+.map-section {
+  padding: var(--space-5) var(--space-2);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.map-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.map-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.map-desc {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-4);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3);
+  text-align: left;
+}
+
+.map-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-3);
+  cursor: pointer;
+  transition: box-shadow 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+}
+
+.map-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.map-card.active {
+  border-color: var(--color-accent);
+}
+
+.map-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.map-icon {
+  font-size: 28px;
+}
+
+.map-pin-badge {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.map-card-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.map-card-event {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.map-card-coords {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--color-accent);
+  font-family: monospace;
+  letter-spacing: 0.02em;
+}
+
+.map-card-body {
+  overflow: hidden;
+  margin-top: var(--space-2);
+}
+
+.map-card-desc {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Add pin form */
+.map-add-box {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-add-toggle {
+  background: transparent;
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-muted);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.map-add-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.map-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.map-add-form input,
+.map-add-form textarea {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+
+.map-add-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.map-add-form input:focus,
+.map-add-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.map-add-row {
+  display: flex;
+  gap: 8px;
+}
+
+.map-emoji-input {
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.map-add-row button {
+  flex: 1;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.map-add-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+</file>
+
+<file path="src/components/LoveMap/LoveMap.jsx">
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./LoveMap.css";
+
+export default function LoveMap() {
+  const [pins, setPins] = useState([]);
+  const [activePin, setActivePin] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [newTitle, setNewTitle] = useState("");
+  const [newEvent, setNewEvent] = useState("");
+  const [newCoords, setNewCoords] = useState("");
+  const [newDesc, setNewDesc] = useState("");
+  const [newIcon, setNewIcon] = useState("📍");
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    fetchPins();
+  }, []);
+
+  async function fetchPins() {
+    const { data, error } = await supabase
+      .from("map_pins")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch map_pins error:", error);
+      setLoading(false);
+      return;
+    }
+
+    setPins(data);
+    setLoading(false);
+  }
+
+  async function handleAddPin(e) {
+    e.preventDefault();
+    if (!newTitle.trim() || !newDesc.trim()) return;
+
+    setSubmitting(true);
+
+    const { data, error } = await supabase
+      .from("map_pins")
+      .insert([{
+        title: newTitle.trim(),
+        event: newEvent.trim(),
+        coords: newCoords.trim(),
+        description: newDesc.trim(),
+        icon: newIcon || "📍"
+      }])
+      .select()
+      .single();
+
+    setSubmitting(false);
+
+    if (error) {
+      console.error("insert map_pins error:", error);
+      return;
+    }
+
+    setPins((prev) => [...prev, data]);
+    setNewTitle("");
+    setNewEvent("");
+    setNewCoords("");
+    setNewDesc("");
+    setNewIcon("📍");
+    setShowForm(false);
+  }
+
+  return (
+    <section className="map-section">
+      <div className="map-container">
+        <motion.p
+          className="map-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          our coordinates
+        </motion.p>
+        <motion.h2
+          className="map-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          special places
+        </motion.h2>
+        <motion.p
+          className="map-desc"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          specific coordinates in the world that hold our favorite memories. click on any pin to explore.
+        </motion.p>
+
+        {!loading && (
+          <div className="map-grid">
+            {pins.map((pin, idx) => (
+              <motion.div
+                key={pin.id}
+                className={`map-card ${activePin === pin.id ? "active" : ""}`}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: Math.min(idx * 0.15, 0.6) }}
+                onClick={() => setActivePin(activePin === pin.id ? null : pin.id)}
+                whileHover={{ y: -5 }}
+              >
+                <div className="map-card-header">
+                  <span className="map-icon">{pin.icon}</span>
+                  <span className="map-pin-badge">📍 click to view</span>
+                </div>
+                <h3 className="map-card-title">{pin.title}</h3>
+                <p className="map-card-event">{pin.event}</p>
+                <span className="map-card-coords">{pin.coords}</span>
+
+                <AnimatePresence>
+                  {activePin === pin.id && (
+                    <motion.div
+                      className="map-card-body"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <p className="map-card-desc">{pin.description}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
+        )}
+
+        <div className="map-add-box">
+          {!showForm ? (
+            <button className="map-add-toggle" onClick={() => setShowForm(true)}>
+              + pin your own special place
+            </button>
+          ) : (
+            <form onSubmit={handleAddPin} className="map-add-form">
+              <input
+                type="text"
+                placeholder="place title"
+                value={newTitle}
+                onChange={(e) => setNewTitle(e.target.value)}
+                maxLength={60}
+                disabled={submitting}
+              />
+              <input
+                type="text"
+                placeholder="what happened here"
+                value={newEvent}
+                onChange={(e) => setNewEvent(e.target.value)}
+                maxLength={80}
+                disabled={submitting}
+              />
+              <input
+                type="text"
+                placeholder="coordinates (optional)"
+                value={newCoords}
+                onChange={(e) => setNewCoords(e.target.value)}
+                maxLength={40}
+                disabled={submitting}
+              />
+              <textarea
+                placeholder="tell the story..."
+                value={newDesc}
+                onChange={(e) => setNewDesc(e.target.value)}
+                maxLength={300}
+                disabled={submitting}
+              />
+              <div className="map-add-row">
+                <input
+                  type="text"
+                  className="map-emoji-input"
+                  placeholder="📍"
+                  value={newIcon}
+                  onChange={(e) => setNewIcon(e.target.value)}
+                  maxLength={2}
+                  disabled={submitting}
+                />
+                <button type="submit" disabled={submitting}>
+                  {submitting ? "pinning..." : "add pin"}
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/MessageBottle/MessageBottle.css">
+.bottle-section {
+  padding: var(--space-5) var(--space-2);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.bottle-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottle-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.bottle-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.bottle-desc {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-4);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Ocean Sea Area */
+.ocean-sea {
+  position: relative;
+  height: 280px;
+  background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  bottom: 0;
+}
+
+.wave-1 {
+  background: radial-gradient(circle at 50% 120%, transparent 40px, rgba(255, 255, 255, 0.4) 41px, rgba(255, 255, 255, 0.4) 43px, transparent 44px) 0 0/80px 100px;
+  opacity: 0.3;
+  animation: waveScroll 15s linear infinite;
+}
+
+.wave-2 {
+  background: radial-gradient(circle at 50% 120%, transparent 30px, rgba(255, 255, 255, 0.6) 31px, rgba(255, 255, 255, 0.6) 33px, transparent 34px) 40px 0/80px 100px;
+  opacity: 0.5;
+  animation: waveScrollReverse 20s linear infinite;
+  bottom: 5px;
+}
+
+.wave-3 {
+  background: radial-gradient(circle at 50% 120%, transparent 20px, rgba(255, 255, 255, 0.8) 21px, rgba(255, 255, 255, 0.8) 23px, transparent 24px) 20px 0/80px 100px;
+  opacity: 0.8;
+  animation: waveScroll 25s linear infinite;
+  bottom: 10px;
+}
+
+@keyframes waveScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes waveScrollReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.bottles-float-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.floating-bottle {
+  position: absolute;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.bottle-shape {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+  transition: transform var(--duration-fast) ease;
+}
+
+.floating-bottle:hover .bottle-shape {
+  transform: scale(1.2) rotate(15deg);
+}
+
+/* Toss form styling */
+.throw-bottle-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-3) var(--space-4);
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  text-align: left;
+}
+
+.throw-bottle-box h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.throw-bottle-form {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.bottle-input {
+  flex-grow: 1;
+  padding: 12px var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  background: var(--color-bg);
+  outline: none;
+  color: var(--color-text);
+  transition: border-color var(--duration-fast) ease;
+}
+
+.bottle-input:focus {
+  border-color: var(--color-accent);
+}
+
+.launch-btn {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform var(--duration-fast) ease;
+  white-space: nowrap;
+}
+
+.launch-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Scroll Modal styling */
+.scroll-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.scroll-modal-content {
+  background: #fbf5e6;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.close-scroll-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #8c7b65;
+  z-index: 10;
+}
+
+.scroll-paper {
+  border: 2px solid #e5d8b8;
+  margin: 10px;
+  padding: var(--space-4);
+  background: #fdfaf2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  justify-content: center;
+}
+
+.scroll-date {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #8c7b65;
+  margin-bottom: var(--space-2);
+}
+
+.scroll-body {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #4a3e2c;
+  margin-bottom: var(--space-3);
+  font-style: italic;
+}
+
+.scroll-sig {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: #8c7b65;
+}
+
+@media (max-width: 600px) {
+  .bottle-title {
+    font-size: 2.2rem;
+  }
+  .throw-bottle-form {
+    flex-direction: column;
+  }
+  .launch-btn {
+    width: 100%;
+  }
+}
+</file>
+
+<file path="src/components/MessageBottle/MessageBottle.jsx">
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./MessageBottle.css";
+
+const defaultMessages = [
+  {
+    id: "bottle-1",
+    message: "i love the way we can talk for hours without ever running out of things to say. you're my best friend. you're my partner, and you're my everything.",
+    sender: "me",
+    date: "july 10, 2026"
+  },
+  {
+    id: "bottle-2",
+    message: "i hope you know how much joy you bring to my life. you make everything brighter just by being you.",
+    sender: "me",
+    date: "july 09, 2026"
+  },
+  {
+    id: "bottle-3",
+    message: "no matter where life takes us, my heart will always find its way back to you. you are my home.",
+    sender: "me",
+    date: "july 08, 2026"
+  }
+];
+
+export default function MessageBottle() {
+  const [messages, setMessages] = useState(defaultMessages);
+  const [selectedMessage, setSelectedMessage] = useState(null);
+  const [newMsgText, setNewMsgText] = useState("");
+  const [isLaunching, setIsLaunching] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchMessages();
+  }, []);
+
+  async function fetchMessages() {
+    const { data, error } = await supabase
+      .from("bottle_messages")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch bottle_messages error:", error);
+      setLoading(false);
+      return;
+    }
+
+    const dbMessages = data.map((row) => ({
+      id: row.id,
+      message: row.message,
+      sender: row.sender,
+      date: new Date(row.created_at).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      })
+    }));
+
+    setMessages([...defaultMessages, ...dbMessages]);
+    setLoading(false);
+  }
+
+  const handleLaunch = async (e) => {
+    e.preventDefault();
+    if (!newMsgText.trim()) return;
+
+    setIsLaunching(true);
+
+    const { data, error } = await supabase
+      .from("bottle_messages")
+      .insert([{ message: newMsgText.trim(), sender: "kira" }])
+      .select()
+      .single();
+
+    setIsLaunching(false);
+
+    if (error) {
+      console.error("insert bottle_messages error:", error);
+      return;
+    }
+
+    const newMsg = {
+      id: data.id,
+      message: data.message,
+      sender: data.sender,
+      date: new Date(data.created_at).toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      })
+    };
+
+    setMessages((prev) => [...prev, newMsg]);
+    setNewMsgText("");
+  };
+
+  return (
+    <section className="bottle-section">
+      <div className="bottle-container">
+        <motion.p
+          className="bottle-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          messages in the ocean
+        </motion.p>
+        <motion.h2
+          className="bottle-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          message in a bottle
+        </motion.h2>
+        <motion.p
+          className="bottle-desc"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          little thoughts sent floating into the digital sea. tap a bottle to pull it out and read the scroll.
+        </motion.p>
+
+        <div className="ocean-sea">
+          <div className="wave wave-1" />
+          <div className="wave wave-2" />
+          <div className="wave wave-3" />
+
+          <div className="bottles-float-area">
+            {!loading &&
+              messages.map((item, idx) => (
+                <motion.div
+                  key={item.id}
+                  className="floating-bottle"
+                  style={{
+                    left: `${15 + (idx * 22) % 70}%`,
+                    bottom: `${20 + (idx * 12) % 40}%`
+                  }}
+                  animate={{
+                    y: [0, -15, 0],
+                    rotate: [-3, 3, -3]
+                  }}
+                  transition={{
+                    duration: 4 + (idx % 3),
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  onClick={() => setSelectedMessage(item)}
+                >
+                  <div className="bottle-shape">🍾</div>
+                </motion.div>
+              ))}
+          </div>
+        </div>
+
+        <div className="throw-bottle-box">
+          <h3>toss a message into the sea</h3>
+          <form onSubmit={handleLaunch} className="throw-bottle-form">
+            <input
+              type="text"
+              className="bottle-input"
+              placeholder="write your secret message here..."
+              value={newMsgText}
+              onChange={(e) => setNewMsgText(e.target.value)}
+              disabled={isLaunching}
+              maxLength={120}
+            />
+            <button type="submit" className="launch-btn" disabled={isLaunching}>
+              {isLaunching ? "tossing bottle..." : "throw bottle"}
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {selectedMessage && (
+          <motion.div
+            className="scroll-modal-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedMessage(null)}
+          >
+            <motion.div
+              className="scroll-modal-content"
+              initial={{ scale: 0.8, rotate: -5, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              exit={{ scale: 0.8, rotate: 5, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="close-scroll-btn" onClick={() => setSelectedMessage(null)}>
+                ✕
+              </button>
+              <div className="scroll-paper">
+                <span className="scroll-date">{selectedMessage.date}</span>
+                <p className="scroll-body">"{selectedMessage.message}"</p>
+                <span className="scroll-sig">always, yours.</span>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/MessageJar/MessageJar.css">
+.jar-section {
+  padding: var(--space-6) var(--space-3);
+  background: var(--color-bg);
+  position: relative;
+}
+
+.jar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jar-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.jar-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+.jar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-5);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .jar-wrapper {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}
+
+/* Glass Jar styling */
+.jar-body {
+  width: 180px;
+  height: 240px;
+  background: rgba(240, 238, 230, 0.4);
+  border: 4px solid var(--color-border);
+  border-radius: 35px 35px 40px 40px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), inset 0 0 20px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.jar-lid {
+  width: 120px;
+  height: 24px;
+  background: var(--color-accent);
+  border-radius: 8px;
+  position: absolute;
+  top: -24px;
+  border: 3px solid var(--color-border);
+}
+
+.jar-ribbon {
+  width: 140px;
+  height: 8px;
+  background: var(--color-accent-soft);
+  position: absolute;
+  top: 10px;
+  border-radius: 4px;
+}
+
+.jar-label {
+  background: #fdfcf9;
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  transform: rotate(-3deg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.jar-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  font-size: 1.25rem;
+  animation: floatHeart 3s ease-in-out infinite alternate;
+}
+
+.s1 { top: 60px; left: 40px; animation-delay: 0s; }
+.s2 { top: 120px; right: 50px; animation-delay: 0.5s; }
+.s3 { bottom: 60px; left: 60px; animation-delay: 1s; }
+.s4 { bottom: 100px; right: 40px; animation-delay: 1.5s; }
+.s5 { top: 80px; right: 80px; animation-delay: 0.8s; }
+
+@keyframes floatHeart {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-10px) scale(1.1); }
+}
+
+/* Shaking animation */
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  20%, 60% { transform: rotate(-8deg); }
+  40%, 80% { transform: rotate(8deg); }
+}
+
+.jar-body.shaking {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+.jar-display-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 350px;
+}
+
+.jar-draw-btn {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-out), background-color var(--duration-fast) var(--ease-out);
+}
+
+.jar-draw-btn:hover:not(:disabled) {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.jar-draw-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.note-card-placeholder {
+  min-height: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulled-note-card {
+  background: #fdfcf9;
+  border: 1px solid var(--color-border);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.note-content {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  font-style: italic;
+}
+
+.note-heart {
+  font-size: 1rem;
+}
+
+.jar-add-box {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jar-add-toggle {
+  background: transparent;
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-muted);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease-out), color 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out);
+}
+
+.jar-add-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.jar-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.jar-add-form input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+
+.jar-add-form input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.jar-add-form button {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s var(--ease-out);
+}
+
+.jar-add-form button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.jar-add-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+</file>
+
+<file path="src/components/MessageJar/MessageJar.jsx">
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./MessageJar.css";
+
+const loveMessages = [
+  "i love the way your eyes light up when you talk about things you love.",
+  "i love how safe and at home i feel the moment we talk.",
+  "i love your kindness, not just to me, but to everyone around you.",
+  "i love the sound of your laugh it is my absolute favorite sound in the world.",
+  "i love how you support me and believe in my dreams, even when i doubt myself.",
+  "i love your gentle strength and how you handle everything with grace.",
+  "i love the quiet, silly moments we share that nobody else understands.",
+  "i love the way you love me unconditionally, patiently, and completely.",
+  "i love that you are my best friend and my partner in everything.",
+  "i love that no matter how much time passes, you still make my heart skip a beat."
+];
+
+export default function MessageJar() {
+  const [allMessages, setAllMessages] = useState(loveMessages);
+  const [currentMessage, setCurrentMessage] = useState("");
+  const [isDrawing, setIsDrawing] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+  const [newReason, setNewReason] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    fetchJarMessages();
+  }, []);
+
+  async function fetchJarMessages() {
+    const { data, error } = await supabase
+      .from("jar_messages")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch jar_messages error:", error);
+      return;
+    }
+
+    const herMessages = data.map((row) => row.message);
+    setAllMessages([...loveMessages, ...herMessages]);
+  }
+
+  function drawMessage() {
+    setIsDrawing(true);
+    setCurrentMessage("");
+
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * allMessages.length);
+      setCurrentMessage(allMessages[randomIndex]);
+      setIsDrawing(false);
+    }, 800);
+  }
+
+  async function handleAddReason(e) {
+    e.preventDefault();
+    if (!newReason.trim()) return;
+
+    setSubmitting(true);
+
+    const { data, error } = await supabase
+      .from("jar_messages")
+      .insert([{ message: newReason.trim() }])
+      .select()
+      .single();
+
+    setSubmitting(false);
+
+    if (error) {
+      console.error("insert jar_messages error:", error);
+      return;
+    }
+
+    setAllMessages((prev) => [...prev, data.message]);
+    setNewReason("");
+    setShowForm(false);
+  }
+
+  return (
+    <section className="jar-section">
+      <div className="jar-container">
+        <motion.p className="jar-subtitle" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+          a little reminder
+        </motion.p>
+        <motion.h2 className="jar-title" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+          the love jar
+        </motion.h2>
+
+        <div className="jar-wrapper">
+          <motion.div
+            className={`jar-body ${isDrawing ? "shaking" : ""}`}
+            onClick={drawMessage}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="jar-lid" />
+            <div className="jar-ribbon" />
+            <div className="jar-label">reasons i love you</div>
+            <div className="jar-stars">
+              <span className="star s1">❤️</span>
+              <span className="star s2">💖</span>
+              <span className="star s3">💝</span>
+              <span className="star s4">💕</span>
+              <span className="star s5">💓</span>
+            </div>
+          </motion.div>
+
+          <div className="jar-display-area">
+            <button className="jar-draw-btn" onClick={drawMessage} disabled={isDrawing}>
+              {isDrawing ? "reaching inside..." : "pull out a note"}
+            </button>
+
+            <div className="note-card-placeholder">
+              <AnimatePresence mode="wait">
+                {currentMessage && (
+                  <motion.div
+                    className="pulled-note-card"
+                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.8, y: -20 }}
+                    transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                  >
+                    <p className="note-content">"{currentMessage}"</p>
+                    <span className="note-heart">❤️</span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </div>
+        </div>
+
+        <div className="bucket-add-box">
+          {!showForm ? (
+            <button className="bucket-add-toggle" onClick={() => setShowForm(true)}>
+              + add your own reason to the jar
+            </button>
+          ) : (
+            <form onSubmit={handleAddReason} className="bucket-add-form">
+              <input
+                type="text"
+                placeholder="i love that..."
+                value={newReason}
+                onChange={(e) => setNewReason(e.target.value)}
+                maxLength={140}
+                disabled={submitting}
+              />
+              <button type="submit" disabled={submitting}>
+                {submitting ? "adding..." : "add to jar"}
+              </button>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Promises/Promises.css">
+.promises-section {
+  padding: var(--space-5) var(--space-2);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.promises-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.promises-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.promises-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.promises-description {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-4);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Grid Layout */
+.promises-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+/* Cards */
+.promise-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-3);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform var(--duration-med) var(--ease-out), box-shadow var(--duration-med) var(--ease-out);
+}
+
+.promise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.promise-card.locked {
+  background: var(--color-surface);
+  border-color: var(--color-accent-soft);
+}
+
+.promise-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.promise-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.promise-tag.vow {
+  background: #fdf2f0;
+  color: var(--color-accent);
+}
+
+.promise-tag.support {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.promise-tag.joy {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.promise-tag.home {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.lock-interactive {
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) ease;
+}
+
+.lock-interactive:hover {
+  color: var(--color-accent);
+}
+
+.promise-card.locked .lock-interactive {
+  color: var(--color-accent);
+  cursor: default;
+}
+
+.promise-card-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  flex-grow: 1;
+  margin-bottom: var(--space-2);
+}
+
+.promise-card-footer {
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-2);
+}
+
+.promise-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.promise-card.locked .promise-status {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Form Styling */
+.add-promise-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-3) var(--space-4);
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  text-align: left;
+}
+
+.add-promise-box h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.add-promise-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.promise-textarea {
+  width: 100%;
+  height: 90px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  resize: none;
+  background: var(--color-bg);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color var(--duration-fast) ease;
+}
+
+.promise-textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.form-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.category-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-right: 4px;
+}
+
+.cat-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  transition: all var(--duration-fast) ease;
+}
+
+.cat-btn.active, .cat-btn:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.submit-promise-btn {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform var(--duration-fast) ease, opacity var(--duration-fast) ease;
+}
+
+.submit-promise-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* SVG Lock & Key Animations */
+.lock-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lock-svg {
+  transition: color var(--duration-fast) ease;
+}
+
+.lock-svg.is-unlocked {
+  color: var(--color-text-muted);
+}
+
+.lock-svg.is-locked {
+  color: var(--color-accent);
+}
+
+.lock-shackle {
+  transform-origin: 30px 45px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .promises-title {
+    font-size: 2.2rem;
+  }
+  .add-promise-box {
+    padding: var(--space-2) var(--space-3);
+  }
+  .form-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .submit-promise-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .category-select {
+    justify-content: space-between;
+  }
+}
+</file>
+
+<file path="src/components/Promises/Promises.jsx">
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./Promises.css";
+
+const defaultPromises = [
+  { id: "default-1", text: "to hold your hand through every season of life, both in sunshine and in storms.", category: "vow" },
+  { id: "default-2", text: "to support your wildest dreams, even when they seem out of reach.", category: "support" },
+  { id: "default-3", text: "to be the calm space you can always come back to at the end of a long day.", category: "home" },
+  { id: "default-4", text: "to listen to you with an open heart, and to learn from you every day.", category: "growth" },
+  { id: "default-5", text: "to share in every quiet laugh, silly dance, and midnight conversation.", category: "joy" },
+];
+
+export default function Promises() {
+  const [promises, setPromises] = useState(defaultPromises);
+  const [lockedIds, setLockedIds] = useState({});
+  const [newPromiseText, setNewPromiseText] = useState("");
+  const [category, setCategory] = useState("vow");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchPromises();
+  }, []);
+
+  async function fetchPromises() {
+    const { data, error } = await supabase
+      .from("promises")
+      .select("*")
+      .order("created_at", { ascending: true });
+
+    if (error) {
+      console.error("fetch promises error:", error);
+      setLoading(false);
+      return;
+    }
+
+    setPromises([...defaultPromises, ...data]);
+
+    const locks = {};
+    data.forEach((p) => {
+      if (p.locked) locks[p.id] = true;
+    });
+    setLockedIds(locks);
+    setLoading(false);
+  }
+
+  async function handleLock(id) {
+    if (lockedIds[id]) return;
+    if (id.startsWith("default-")) return; // defaults aren't in DB, skip persisting lock for those
+
+    setLockedIds((prev) => ({ ...prev, [id]: true }));
+
+    const { error } = await supabase
+      .from("promises")
+      .update({ locked: true })
+      .eq("id", id);
+
+    if (error) {
+      console.error("lock promise error:", error);
+      setLockedIds((prev) => {
+        const copy = { ...prev };
+        delete copy[id];
+        return copy;
+      });
+    }
+  }
+
+  async function handleAddPromise(e) {
+    e.preventDefault();
+    if (!newPromiseText.trim()) return;
+
+    const { data, error } = await supabase
+      .from("promises")
+      .insert([{ text: newPromiseText.trim(), category }])
+      .select()
+      .single();
+
+    if (error) {
+      console.error("insert promise error:", error);
+      return;
+    }
+
+    setPromises((prev) => [...prev, data]);
+    setNewPromiseText("");
+  }
+
+  return (
+    <section className="promises-section">
+      <div className="promises-container">
+        <motion.p className="promises-subtitle" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+          our pinky promises
+        </motion.p>
+        <motion.h2 className="promises-title" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+          vows & love locks
+        </motion.h2>
+        <motion.p className="promises-description" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
+          a collection of promises written to you. click on any lock to turn the key and seal the promise forever.
+        </motion.p>
+
+        {!loading && (
+          <div className="promises-grid">
+            {promises.map((promise, idx) => {
+              const isLocked = !!lockedIds[promise.id];
+              return (
+                <motion.div
+                  key={promise.id}
+                  className={`promise-card ${isLocked ? "locked" : "unlocked"}`}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: Math.min(idx * 0.1, 0.5) }}
+                >
+                  <div className="promise-card-header">
+                    <span className={`promise-tag ${promise.category}`}>{promise.category}</span>
+                    <div className="lock-interactive" onClick={() => handleLock(promise.id)}>
+                      <LockAnimation isLocked={isLocked} />
+                    </div>
+                  </div>
+                  <p className="promise-card-text">"{promise.text}"</p>
+                  <div className="promise-card-footer">
+                    <span className="promise-status">
+                      {isLocked ? "sealed forever" : "tap lock to seal"}
+                    </span>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
+
+        <motion.div
+          className="add-promise-box"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <h3>write a new promise</h3>
+          <form onSubmit={handleAddPromise} className="add-promise-form">
+            <textarea
+              className="promise-textarea"
+              placeholder="e.g., to always bring you chocolate when you are feeling down..."
+              value={newPromiseText}
+              onChange={(e) => setNewPromiseText(e.target.value)}
+              maxLength={150}
+            />
+            <div className="form-controls">
+              <div className="category-select">
+                <span className="select-label">tag:</span>
+                {["vow", "support", "joy", "home"].map((cat) => (
+                  <button
+                    key={cat}
+                    type="button"
+                    className={`cat-btn ${category === cat ? "active" : ""}`}
+                    onClick={() => setCategory(cat)}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+              <button type="submit" className="submit-promise-btn">
+                create lock
+              </button>
+            </div>
+          </form>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function LockAnimation({ isLocked }) {
+  return (
+    <div className="lock-wrapper">
+      <svg viewBox="0 0 100 100" className={`lock-svg ${isLocked ? "is-locked" : "is-unlocked"}`} width="44" height="44">
+        <motion.path
+          d="M30 45 V 30 A 20 20 0 0 1 70 30 V 45"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="8"
+          strokeLinecap="round"
+          className="lock-shackle"
+          animate={isLocked ? { y: 6 } : { y: 0, rotate: -15, originX: "30px", originY: "45px" }}
+          transition={{ type: "spring", stiffness: 300, damping: 15 }}
+        />
+        <path
+          d="M 50 85 C 20 70, 15 45, 30 45 C 40 45, 50 52, 50 52 C 50 52, 60 45, 70 45 C 85 45, 80 70, 50 85 Z"
+          fill="currentColor"
+          className="lock-body"
+        />
+        <circle cx="50" cy="60" r="5" fill="var(--color-bg)" className="keyhole-dot" />
+        <path d="M48 60 L52 60 L54 72 L46 72 Z" fill="var(--color-bg)" className="keyhole-stem" />
+        <AnimatePresence>
+          {!isLocked && (
+            <motion.g className="key-icon" initial={{ opacity: 0.6, scale: 0.8 }} whileHover={{ opacity: 1, scale: 1.1 }}>
+              <circle cx="50" cy="20" r="4" fill="none" stroke="currentColor" strokeWidth="2" />
+              <line x1="50" y1="24" x2="50" y2="35" stroke="currentColor" strokeWidth="2" />
+            </motion.g>
+          )}
+        </AnimatePresence>
+      </svg>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Quiz/Quiz.css">
+.quiz-section {
+  padding: var(--space-5) var(--space-2);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.quiz-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quiz-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.quiz-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.quiz-card-wrapper {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-card, .quiz-finished-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: var(--space-4);
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  text-align: left;
+}
+
+.quiz-progress {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+  margin-bottom: var(--space-2);
+}
+
+.quiz-question {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+  line-height: 1.4;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.quiz-option-btn {
+  width: 100%;
+  padding: var(--space-2);
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  transition: all var(--duration-fast) ease;
+}
+
+.quiz-option-btn.interactive:hover {
+  border-color: var(--color-accent);
+  background: var(--color-surface);
+  transform: translateX(4px);
+}
+
+.quiz-option-btn.correct {
+  background: #e8f5e9;
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.quiz-option-btn.incorrect {
+  background: #ffebee;
+  border-color: #c62828;
+  color: #c62828;
+}
+
+.quiz-option-btn.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.quiz-feedback {
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.feedback-text {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  flex-grow: 1;
+}
+
+.quiz-next-btn {
+  background: var(--color-text);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.quiz-next-btn:hover {
+  opacity: 0.9;
+}
+
+/* Finished screen */
+.quiz-finished-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-5) var(--space-4);
+}
+
+.celebration-emoji {
+  font-size: 3rem;
+  margin-bottom: var(--space-2);
+}
+
+.quiz-finished-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.score-display {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.score-desc {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 450px;
+  margin-bottom: var(--space-3);
+}
+
+.quiz-restart-btn {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform var(--duration-fast) ease;
+}
+
+.quiz-restart-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .quiz-title {
+    font-size: 2.2rem;
+  }
+  .quiz-feedback {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .quiz-next-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+</file>
+
+<file path="src/components/Quiz/Quiz.jsx">
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../../lib/supabaseClient";
+import "./Quiz.css";
+
+const quizQuestions = [
+  {
+    id: 1,
+    question: "where did we first speak or meet?",
+    options: [
+      "in that cozy little coffee shop",
+      "through a mutual friend's party",
+      "online, with a simple 'happy birthday' message",
+      "at the library, hiding behind books"
+    ],
+    correctIdx: 2,
+    successMsg: "yes! a single 'happy birthday' message that changed everything.",
+    failMsg: "not quite! remember our digital start? ❤️"
+  },
+  {
+    id: 2,
+    question: "who is most likely to steal the blanket at night?",
+    options: [
+      "definitely Kira",
+      "Pinu, without a doubt",
+      "both of us, in a chaotic tug of war",
+      "neither, we share perfectly"
+    ],
+    correctIdx: 0,
+    successMsg: "haha absolutely, you wrap yourself up like a cute burrito! 🌯",
+    failMsg: "are you sure? let's be real here... 😜"
+  },
+  {
+    id: 3,
+    question: "what is our ultimate comfort activity?",
+    options: [
+      "fancy dining at expensive restaurants",
+      "ordering takeout and watching cozy movies",
+      "going on long intense workouts",
+      "arguing over which directions to go"
+    ],
+    correctIdx: 1,
+    successMsg: "spot on! pizza, pajamas, and a good movie is our happy place.",
+    failMsg: "sounds fun, but you know we love cozying up inside way more!"
+  }
+];
+
+export default function Quiz() {
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [selectedOpt, setSelectedOpt] = useState(null);
+  const [answered, setAnswered] = useState(false);
+  const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
+  const [answerLog, setAnswerLog] = useState([]);
+  const [saving, setSaving] = useState(false);
+
+  function handleOptionClick(optIdx) {
+    if (answered) return;
+    setSelectedOpt(optIdx);
+    setAnswered(true);
+
+    const currentQ = quizQuestions[currentIdx];
+    const isCorrect = optIdx === currentQ.correctIdx;
+    if (isCorrect) setScore((prev) => prev + 1);
+
+    setAnswerLog((prev) => [
+      ...prev,
+      {
+        question: currentQ.question,
+        selected: currentQ.options[optIdx],
+        correct: isCorrect
+      }
+    ]);
+  }
+
+  async function handleNext() {
+    setSelectedOpt(null);
+    setAnswered(false);
+
+    if (currentIdx < quizQuestions.length - 1) {
+      setCurrentIdx((prev) => prev + 1);
+    } else {
+      setFinished(true);
+      await saveResult();
+    }
+  }
+
+  async function saveResult() {
+    setSaving(true);
+    const { error } = await supabase.from("quiz_results").insert([
+      {
+        score,
+        total: quizQuestions.length,
+        answers: answerLog
+      }
+    ]);
+    setSaving(false);
+    if (error) console.error("save quiz_results error:", error);
+  }
+
+  function handleRestart() {
+    setCurrentIdx(0);
+    setSelectedOpt(null);
+    setAnswered(false);
+    setScore(0);
+    setFinished(false);
+    setAnswerLog([]);
+  }
+
+  const currentQ = quizQuestions[currentIdx];
+
+  return (
+    <section className="quiz-section">
+      <div className="quiz-container">
+        <motion.p className="quiz-subtitle" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+          how well do you know us?
+        </motion.p>
+        <motion.h2 className="quiz-title" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+          the love trivia
+        </motion.h2>
+
+        <div className="quiz-card-wrapper">
+          <AnimatePresence mode="wait">
+            {!finished ? (
+              <motion.div
+                key={currentIdx}
+                className="quiz-card"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.4 }}
+              >
+                <div className="quiz-progress">
+                  question {currentIdx + 1} of {quizQuestions.length}
+                </div>
+                <h3 className="quiz-question">{currentQ.question}</h3>
+
+                <div className="quiz-options">
+                  {currentQ.options.map((opt, oIdx) => {
+                    let btnClass = "";
+                    if (answered) {
+                      if (oIdx === currentQ.correctIdx) btnClass = "correct";
+                      else if (selectedOpt === oIdx) btnClass = "incorrect";
+                      else btnClass = "disabled";
+                    } else {
+                      btnClass = "interactive";
+                    }
+
+                    return (
+                      <button
+                        key={oIdx}
+                        className={`quiz-option-btn ${btnClass}`}
+                        onClick={() => handleOptionClick(oIdx)}
+                        disabled={answered}
+                      >
+                        {opt}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <AnimatePresence>
+                  {answered && (
+                    <motion.div className="quiz-feedback" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+                      <p className="feedback-text">
+                        {selectedOpt === currentQ.correctIdx ? currentQ.successMsg : currentQ.failMsg}
+                      </p>
+                      <button className="quiz-next-btn" onClick={handleNext}>
+                        {currentIdx === quizQuestions.length - 1 ? "finish" : "next"}
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ) : (
+              <motion.div key="finished" className="quiz-finished-card" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
+                <span className="celebration-emoji">✨❤️✨</span>
+                <h3>quiz completed!</h3>
+                <p className="score-display">
+                  your score: <strong>{score} / {quizQuestions.length}</strong>
+                </p>
+                <p className="score-desc">
+                  {score === quizQuestions.length
+                    ? "perfect! we really are in sync in everything we do. i love you!"
+                    : "almost perfect! a good excuse to reminisce and make more memories together."}
+                </p>
+                {saving && <p className="score-desc">saving your result...</p>}
+                <button className="quiz-restart-btn" onClick={handleRestart}>
+                  play again
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Soundtrack/Soundtrack.css">
+.soundtrack-section {
+  padding: var(--space-6) var(--space-3);
+  background: var(--color-bg);
+  position: relative;
+}
+
+.soundtrack-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.soundtrack-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.soundtrack-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+.soundtrack-player-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  text-align: left;
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width: 650px) {
+  .soundtrack-player-box {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-4) var(--space-3);
+  }
+}
+
+.player-left {
+  flex-shrink: 0;
+}
+
+.vinyl-record {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #333 30%, #111 60%, #000 100%);
+  border: 4px solid #222;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinyl-center {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  border: 3px solid var(--color-accent);
+}
+
+/* Vinyl rotation animation */
+@keyframes rotateVinyl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl-record.playing {
+  animation: rotateVinyl 4s linear infinite;
+}
+
+.player-right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.player-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.player-track-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.player-track-artist {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 650px) {
+  .player-controls {
+    justify-content: center;
+  }
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.control-btn:hover {
+  background-color: var(--color-border);
+  transform: scale(1.05);
+}
+
+.play-btn {
+  background-color: var(--color-accent);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+}
+
+.play-btn:hover {
+  background-color: #c25f3f;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.player-progress-area {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.progress-bar-bg {
+  height: 4px;
+  background: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.progress-time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+</file>
+
+<file path="src/components/Soundtrack/Soundtrack.jsx">
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import "./Soundtrack.css";
+
+const playlist = [
+  {
+    id: 1,
+    title: "first conversation",
+    artist: "quiet piano & rain",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    duration: "6:12",
+  },
+  {
+    id: 2,
+    title: "the walk in the park",
+    artist: "acoustic guitar instrumental",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    duration: "7:05",
+  },
+  {
+    id: 3,
+    title: "under the stars",
+    artist: "slow ambient lofi",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    duration: "5:44",
+  },
+];
+
+export default function Soundtrack() {
+  const [currentTrackIdx, setCurrentTrackIdx] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const audioRef = useRef(null);
+
+  const track = playlist[currentTrackIdx];
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.load();
+      if (isPlaying) {
+        audioRef.current.play().catch(() => setIsPlaying(false));
+      }
+    }
+  }, [currentTrackIdx]);
+
+  function handlePlayPause() {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+    }
+  }
+
+  function handleTimeUpdate() {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+    }
+  }
+
+  function handleLoadedMetadata() {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  }
+
+  function handleTrackEnd() {
+    nextTrack();
+  }
+
+  function nextTrack() {
+    setCurrentTrackIdx((prev) => (prev + 1) % playlist.length);
+  }
+
+  function prevTrack() {
+    setCurrentTrackIdx((prev) => (prev - 1 + playlist.length) % playlist.length);
+  }
+
+  function formatTime(secs) {
+    const m = Math.floor(secs / 60);
+    const s = Math.floor(secs % 60);
+    return `${m}:${s < 10 ? "0" : ""}${s}`;
+  }
+
+  const progressPercent = duration ? (currentTime / duration) * 100 : 0;
+
+  return (
+    <section className="soundtrack-section">
+      <div className="soundtrack-container">
+        <motion.p
+          className="soundtrack-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          press play
+        </motion.p>
+        <motion.h2
+          className="soundtrack-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          our soundtrack
+        </motion.h2>
+
+        <div className="soundtrack-player-box">
+          <div className="player-left">
+            <div className={`vinyl-record ${isPlaying ? "playing" : ""}`}>
+              <div className="vinyl-center" />
+            </div>
+          </div>
+
+          <div className="player-right">
+            <span className="player-status">{isPlaying ? "now playing" : "paused"}</span>
+            <h3 className="player-track-title">{track.title}</h3>
+            <p className="player-track-artist">{track.artist}</p>
+
+            <div className="player-controls">
+              <button className="control-btn" onClick={prevTrack}>
+                ⏮
+              </button>
+              <button className="control-btn play-btn" onClick={handlePlayPause}>
+                {isPlaying ? "⏸" : "▶"}
+              </button>
+              <button className="control-btn" onClick={nextTrack}>
+                ⏭
+              </button>
+            </div>
+
+            <div className="player-progress-area">
+              <div className="progress-bar-bg">
+                <div
+                  className="progress-bar-fill"
+                  style={{ width: `${progressPercent}%` }}
+                />
+              </div>
+              <div className="progress-time-labels">
+                <span>{formatTime(currentTime)}</span>
+                <span>{duration ? formatTime(duration) : track.duration}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <audio
+          ref={audioRef}
+          src={track.url}
+          onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={handleLoadedMetadata}
+          onEnded={handleTrackEnd}
+        />
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Stats/Stats.css">
+.stats {
+  padding: var(--space-6) var(--space-4);
+  background: var(--color-bg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-heading {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.stat-card {
+  text-align: left;
+}
+
+.stat-card-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: var(--space-3);
+  background: var(--color-surface);
+}
+
+.stat-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.stat-card:hover .stat-card-img img {
+  transform: scale(1.05);
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.stat-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.stat-sub {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  max-width: 300px;
+}
+</file>
+
+<file path="src/components/Stats/Stats.jsx">
+import { motion } from "framer-motion";
+import "./Stats.css";
+
+const stats = [
+  {
+    id: 1,
+    number: "50",
+    label: "photos",
+    sub: "but endless memories every one, a moment i didn't want to lose.",
+    img: "/photos/stat-1.jpg",
+  },
+  {
+    id: 2,
+    number: "0.33",
+    label: "years",
+    sub: "and better than ever. and still counting.",
+    img: "/photos/stat-2.jpg",
+  },
+  {
+    id: 3,
+    number: "1",
+    label: "promise",
+    sub: "I am yours and you are mine. and I will never let you go.",
+    img: "/photos/stat-3.jpg",
+  },
+];
+
+const item = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+  },
+};
+
+export default function Stats() {
+  return (
+    <section className="stats">
+      <p className="stats-heading">the numbers that matter</p>
+      <div className="stats-grid">
+        {stats.map((s, i) => (
+          <motion.div
+            key={s.id}
+            className="stat-card"
+            variants={item}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ delay: i * 0.15 }}
+          >
+            <div className="stat-card-img">
+              <img src={s.img} alt={s.label} />
+            </div>
+            <h3 className="stat-number">
+              {s.number} <span className="stat-label">{s.label}</span>
+            </h3>
+            <p className="stat-sub">{s.sub}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Videos/Videos.css">
+.videos-section {
+  padding: var(--space-6) var(--space-4);
+  background: var(--color-bg);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.videos-heading {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+.video-card {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+  will-change: transform;
+}
+
+.video-el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.video-play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(217, 119, 87, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.video-progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.video-progress-fill {
+  height: 100%;
+  background: var(--color-accent);
+  transition: width 0.1s linear;
+}
+
+.video-caption {
+  position: absolute;
+  bottom: var(--space-2);
+  left: var(--space-2);
+  right: var(--space-2);
+  color: #f5f3ec;
+  font-size: 14px;
+  font-family: var(--font-serif);
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .videos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .video-caption {
+    opacity: 1; /* always visible on mobile, no hover */
+  }
+}
+</file>
+
+<file path="src/components/Videos/Videos.jsx">
+import { useRef, useState } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import videoData from "../../data/videoData";
+import "./Videos.css";
+
+function VideoCard({ video, index }) {
+  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const rotateX = useTransform(my, [-50, 50], [8, -8]);
+  const rotateY = useTransform(mx, [-50, 50], [-8, 8]);
+
+  function handleMouseMove(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    mx.set(e.clientX - rect.left - rect.width / 2);
+    my.set(e.clientY - rect.top - rect.height / 2);
+  }
+
+  function handleMouseLeave() {
+    mx.set(0);
+    my.set(0);
+  }
+
+  function togglePlay() {
+    if (!videoRef.current) return;
+    if (playing) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setPlaying(!playing);
+  }
+
+  function handleTimeUpdate() {
+    const v = videoRef.current;
+    if (v && v.duration) setProgress((v.currentTime / v.duration) * 100);
+  }
+
+  return (
+    <motion.div
+      className="video-card"
+      style={{ rotateX, rotateY, transformPerspective: 800 }}
+      initial={{ opacity: 0, y: 50, scale: 0.92 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.7, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      onClick={togglePlay}
+    >
+      <video
+        ref={videoRef}
+        src={video.src}
+        poster={video.poster}
+        playsInline
+        loop
+        onEnded={() => setPlaying(false)}
+        onTimeUpdate={handleTimeUpdate}
+        className="video-el"
+      />
+
+      <motion.div
+        className="video-play-overlay"
+        animate={{ opacity: playing ? 0 : 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <motion.div
+          className="video-play-btn"
+          initial={{ scale: 0.8 }}
+          whileHover={{ scale: 1.15 }}
+          transition={{ type: "spring", stiffness: 300, damping: 15 }}
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20">
+            <polygon points="5,3 17,10 5,17" fill="#faf9f5" />
+          </svg>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="video-progress-track"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: playing ? 1 : 0 }}
+      >
+        <motion.div
+          className="video-progress-fill"
+          style={{ width: `${progress}%` }}
+        />
+      </motion.div>
+
+      {video.caption && (
+        <motion.p
+          className="video-caption"
+          initial={{ opacity: 0, y: 10 }}
+          whileHover={{ opacity: 1, y: 0 }}
+        >
+          {video.caption}
+        </motion.p>
+      )}
+    </motion.div>
+  );
+}
+
+export default function Videos() {
+  return (
+    <section className="videos-section">
+      <motion.p
+        className="videos-heading"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        moments in motion
+      </motion.p>
+      <div className="videos-grid">
+        {videoData.map((v, i) => (
+          <VideoCard key={v.id} video={v} index={i} />
+        ))}
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/data/galleryData.js">
+const captions = {
+  "001": "Aa nani si tane jou ne bas etlu j thay… kaash hu tane tyare pan olakhto hot, Tara jivan na je varsho ma hu nahoto, e have aa photos ma jou chhu… ane dil thi bas etlu ichhu chhu ke tari aagal ni darek yaad ma hu hou",
+  "002": "Tane aa rite dil kholi ne hasta jou ne bas etlu j thay… jindagi game tetli badlay, pan tari andar ni aa nani, mastikhor ane khush chokri kyarey na badlay Ane tari aa smile nu ek reason hu pan hamesha bani rahu… bas etlu j joie chhe mane",
+  "003": "Tari aa smile jou ne hamesha evu lage chhe ke mara dil ne je sukoon aatla samay thi shodhto hato ne, e tara ma j malvanu hatu… Tu bas aavi j rite mari same hasta rehje, kem ke tane khabar pan nathi tari ek smile mari duniya ketli sundar banavi de chhe",
+  "004": "Tane aa rite jou ne ek alag j garv thay chhe… kem ke aa sundar chehra pachhal ketli samajdaar, mehnati ane majboot chokri chhe e hu janu chhu, Duniya mate tu bas ek sundar chokri hois, pan mara mate tu e vyakti chhe jene joi ne mane roj thodu vadhu saru banvanu mann thay chhe",
+  "005": "",
+  "006": "",
+  "007": "",
+  "008": "",
+  "009": "",
+  "010": "",
+  "011": "",
+  "012": "",
+  "013": "",
+  "014": "",
+  "015": "",
+  "016": "",
+  "017": "",
+  "018": "",
+  "019": "",
+  "020": "",
+  "021": "",
+  "022": "",
+  "023": "",
+  "024": "",
+  "025": "",
+  "026": "",
+  "027": "",
+  "028": "",
+  "029": "",
+  "030": "",
+  "031": "",
+  "032": "",
+  "033": "",
+  "034": "",
+  "035": "",
+  "036": "",
+  "037": "",
+  "038": "",
+  "039": "",
+  "040": "",
+  "041": "",
+  "042": "",
+  "043": "",
+  "044": "",
+  "045": "",
+  "046": "",
+  "047": "",
+  "048": "",
+  "049": "",
+  "050": ""
+  // ... continue for all 50
+};
+
+const galleryData = Array.from({ length: 50 }, (_, i) => {
+  const num = String(i + 1).padStart(3, "0");
+  return {
+    id: num,
+    src: `/photos/${num}.jpeg`,
+    chibi: `/chibi-photos/${num}-chibi.png`,
+    caption: captions[num] || "",
+    audio: `/audio/${num}.mp3`,
+  };
+});
+
+export default galleryData;
+</file>
+
+<file path="src/data/journeyData.js">
+const journeyData = [
+  {
+    id: 1,
+    year: "2024",
+    title: "the day everything started.",
+    text: "neither of us knew what this would become.",
+    img: "/photos/journey-1.jpg",
+  },
+  {
+    id: 2,
+    year: "2024",
+    title: "first call, little short but first",
+    text: "distance meant nothing once we started talking.",
+    img: "/photos/journey-2.jpg",
+  },
+  {
+    id: 3,
+    year: "2024",
+    title: "the first time we played a game together (truth or dare).",
+    text: "some things are better when we're together.",
+    img: "/photos/journey-3.jpg",
+  },
+  {
+    id: 4,
+    year: "2025",
+    title: "we chose each other, every time.",
+    text: "through the hard day. two different time zones, but still together.busy in eachother's lives, but still making time for each other.",
+    img: "/photos/journey-4.jpg",
+  },
+  {
+    id: 5,
+    year: "2025",
+    title: "still here. but not officially us yet.Unofficially, we are.",
+    text: "and still writing the next part.",
+    img: "/photos/journey-5.jpg",
+  },
+  {
+    id: 6,
+    year: "2026",
+    title: "the lowest phase of US and maybe Starting Of US.",
+    text: "and the start of the next chapter.",
+    img: "/photos/journey-6.jpg",
+  },
+  {
+    id: 7,
+    year: "2026",
+    title: "the day we made it official.",
+    text: "The day we made it official. and the start of peak happiness.",
+    img: "/photos/journey-7.jpg",
+  },
+  {
+    id: 8,
+    year: "2026",
+    title: "our first date.",
+    text: "lil butterflies in my stomach. and the our first date.",
+    img: "/photos/journey-8.jpg",
+  },
+  {
+    id: 9,
+    year: "2026",
+    title: "Our second date.",
+    text: "bestest day of my life. and the bestest 8 hours",
+    img: "/photos/journey-9.jpg",
+  }
+];
+
+export default journeyData;
+</file>
+
+<file path="src/data/videoData.js">
+const videoData = [
+  { id: 1, src: "/videos/video-1.mp4", poster: "/photos/video-poster-1.jpg", caption: "" },
+  { id: 2, src: "/videos/video-2.mp4", poster: "/photos/video-poster-2.jpg", caption: "" },
+  { id: 3, src: "/videos/video-3.mp4", poster: "/photos/video-poster-3.jpg", caption: "" },
+  { id: 4, src: "/videos/video-4.mp4", poster: "/photos/video-poster-4.jpg", caption: "" },
+  { id: 5, src: "/videos/video-5.mp4", poster: "/photos/video-poster-5.jpg", caption: "" },
+];
+
+export default videoData;
+</file>
+
+<file path="src/lib/supabaseClient.js">
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+</file>
+
+<file path="src/styles/global.css">
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+
+.app { position: relative; }
+</file>
+
+<file path="src/styles/tokens.css">
+:root {
+  --color-bg: #faf9f5;
+  --color-bg-dark: #17160f;
+  --color-text: #2d2c28;
+  --color-text-muted: #6b6a63;
+  --color-accent: #d97757;
+  --color-accent-soft: #e8c4b0;
+  --color-surface: #f0eee6;
+  --color-border: #e0ddd3;
+
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.2s;
+  --duration-med: 0.6s;
+}
+</file>
+
+<file path="src/App.jsx">
+import Hero from "./components/Hero/Hero";
+import Counter from "./components/Counter/Counter";
+import Soundtrack from "./components/Soundtrack/Soundtrack";
+import Journey from "./components/Journey/Journey";
+import Feeling from "./components/Feelings/Feelings";
+import MessageJar from "./components/MessageJar/MessageJar";
+import Stats from "./components/Stats/Stats";
+import DiaryBook from "./components/Gallery/DiaryBook";
+import Letters from "./components/Letters/Letters";
+import LoveMap from "./components/LoveMap/LoveMap";
+import Promises from "./components/Promises/Promises";
+import Coupons from "./components/Coupons/Coupons";
+import Quiz from "./components/Quiz/Quiz";
+import MessageBottle from "./components/MessageBottle/MessageBottle";
+import BucketList from "./components/BucketList/BucketList";
+import Videos from "./components/Videos/Videos";
+import "./styles/tokens.css";
+import "./styles/global.css";
+
+function App() {
+  return (
+    <div className="app">
+      <Hero />
+      <Counter />
+      <Journey />
+      <Feeling />
+      <MessageJar />
+      <Stats />
+      <DiaryBook />
+      <Letters />
+      <LoveMap />
+      <Promises />
+      <Coupons />
+      <Quiz />
+      <MessageBottle />
+      <BucketList />
+      <Videos />
+    </div>
+  );
+}
+
+export default App;
+</file>
+
+<file path="src/main.jsx">
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+  },
+])
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kira-story</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "kira-story",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.2",
+    "framer-motion": "^12.42.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-lazy-load-image-component": "^1.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "vite": "^8.1.1"
+  }
+}
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+</files>
